@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Template</title>
+        
+        <!--css link-->
+        <link type="text/css" href="main.css" rel="stylesheet">
+        
+        <!--js link-->
+        <script type="text/javascript" src="main.js"></script>
+        <!--jQuery first-->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        
+        <!--custom js-->
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    
+        
+    
+    </head>
+    
+        
+        
+
+    <body>
+        
+        <header id="mySketch">
+            <img src="imgs/tempVisualizer.png" width="800" height="250" alt="visualizer" id="img0" />
+        </header>
+        
+        <audio id="C" src="sound/piano_middle_C.mp3"></audio>
+        <audio id="Cc" src="sound/piano_C_sharp.mp3"></audio>
+        <audio id="D" src="sound/piano_D.mp3"></audio>
+        <audio id="Dd" src="sound/piano_D_sharp.mp3"></audio>
+        <audio id="E" src="sound/piano_E.mp3"></audio>
+        <audio id="F" src="sound/piano_F.mp3"></audio>
+        <audio id="Ff" src="sound/piano_F_sharp.mp3"></audio>
+        <audio id="G" src="sound/piano_G.mp3"></audio>
+        <audio id="Gg" src="sound/piano_G_sharp.mp3"></audio>
+        <audio id="A" src="sound/piano_A.mp3"></audio>
+        <audio id="Aa" src="sound/piano_A_sharp.mp3"></audio>
+        <audio id="B" src="sound/piano_B.mp3"></audio>
+        
+        
+        <section class="menu">
+            
+            <button><a href="#" id="play">PLAY ►</a></button>
+            <button><a href="#" id="stop">STOP</a></button>
+            <button><a href="#" id="record">RECORD</a></button>
+        
+        </section>
+        
+        <section class="piano">
+            
+            
+            
+            
+            <a href="#">
+            <img onclick="document.getElementById('C').play()" src="imgs/CNote.png" height="500" alt="notec" id="img1">
+            </a>
+            <p id="CNOTE">C</p>
+                
+            <a href="#">
+            <img onclick="document.getElementById('Cc').play()" src="imgs/C_Note.png" height="377" alt="notec#" id="img2" />
+            </a>
+            <p id="CcNOTE">C#</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('D').play()" src="imgs/DNote.png" height="500" alt="noted" id="img3" />
+            </a>
+            <p id="DNOTE">D</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('Dd').play()" src="imgs/D_Note.png" height="377" alt="noted#" id="img4" />
+            </a>
+            <p id="DdNOTE">D#</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('E').play()" src="imgs/ENote.png" height="500" alt="notee" id="img5" />
+            </a>
+            <p id="ENOTE">E</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('F').play()" src="imgs/FNote.png" height="500" alt="notef" id="img6" />
+            </a>
+            <p id="FNOTE">F</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('Ff').play()" src="imgs/F_Note.png" height="377" alt="notef#" id="img7" />
+            </a>
+            <p id="FfNOTE">F#</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('G').play()" src="imgs/GNote.png" height="500" alt="noteg" id="img8" />
+            </a>
+            <p id="GNOTE">G</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('Gg').play()" src="imgs/G_Note.png" height="377" alt="noteg#" id="img9" />
+            </a>
+            <p id="GgNOTE">G#</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('A').play()" src="imgs/ANote.png" height="500" alt="notea" id="img10" />
+            </a>
+            <p id="ANOTE">A</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('Aa').play()" src="imgs/A_Note.png" height="377" alt="notea#" id="img11" />
+            </a>
+            <p id="AaNOTE">A#</p>
+            
+            <a href="#">
+            <img onclick="document.getElementById('B').play()" src="imgs/BNote.png" height="500" alt="noteb" id="img12" />
+            </a>
+            <p id="BNOTE">B</p>
+            
+        </section>
+        
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </footer>    
+    
+    </body>
+    
+</html>
