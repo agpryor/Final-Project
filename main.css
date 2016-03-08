@@ -29,12 +29,13 @@ header {
     font-weight:bold;
 }
 
+
 #CNOTE
 {
     color:black;
     left:50px;
     top:450px;
-    opacity: 1;
+    opacity: .5;
 }
 
 #CcNOTE
@@ -42,7 +43,7 @@ header {
     color:white;
     left:95px;
     top:320px;
-    opacity: 1;
+    opacity: .5;
 }
 
 #DNOTE
@@ -50,7 +51,7 @@ header {
     color:black;
     left:165px;
     top:450px;
-    opacity: 1;
+    opacity: .5;
 }
 
 #DdNOTE
@@ -58,7 +59,7 @@ header {
     color:white;
     left:205px;
     top:320px;
-    opacity: 1;
+    opacity: .5;
 }
 
 #ENOTE
@@ -66,7 +67,7 @@ header {
     color:black;
     left:275px;
     top:450px;
-    opacity: 1;
+    opacity: .5;
 }
 
 #FNOTE
@@ -74,14 +75,14 @@ header {
     color:black;
     left:385px;
     top:450px;
-    opacity: 1;
+    opacity: .5;
 }
-
+/*
 #FfNOTE
 {
-    color:black;
-    left:500px;
-    top:320px
+    color:white;
+    left:400px;
+    top:400px
     opacity: 1;
 }
 
@@ -124,6 +125,7 @@ header {
     top:450px;
     opacity: 0;
 }
+*/
 
 button{
     width: 200px;

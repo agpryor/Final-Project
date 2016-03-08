@@ -9,15 +9,14 @@ $(function() {
     console.log('ready');
     
     $('#img1').hover(function() {
-    //console.log("hover over img1");
-    
-    $(this).attr('#CNOTE').css('opacity',1);
-    //change source to ''
-
-    //change opacity to 1
-
-  }
-    
+      //console.log('click');
+        
+        $('p#CNOTE').animate(
+       {
+           opacity: 1
+       }
+       ) 
+    });
     
     
     function loadSound() {
@@ -28,7 +27,7 @@ $(function() {
             createjs.Sound.play(soundC);
         }
     
-}
+
     
     
     
