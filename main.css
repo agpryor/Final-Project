@@ -11,22 +11,33 @@ header {
 	margin: 24px auto 0px auto;
 	border: 5px solid darkgrey;
     background-color: lightgrey;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+#textbook1 {
+    visibility:hidden;
+    opacity:0;
 }
 
 .menu {
     width: 610px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     
     
 }
 
 #CNOTE, #CcNOTE, #DNOTE, #DdNOTE, #ENOTE, #FNOTE, #FfNOTE, #GNOTE, #GgNOTE, #ANOTE, #AaNOTE, #BNOTE {
-    z-index:100;
+    z-index:130;
     position:absolute;
     font-size:52px;
     font-weight:bold;
+}
+#ALETTER, #WLETTER, #SLETTER, #ELETTER, #DLETTER, #JLETTER, #ULETTER, #KLETTER, #ILETTER, #LLETTER, #OLETTER, #SEMILETTER{
+    z-index:140;
+    position:absolute;
+    font-size:30px;
+    
 }
 
 
@@ -37,6 +48,10 @@ header {
     top:450px;
     opacity: .5;
 }
+#ALETTER{
+    color:black;
+    left:50px;
+}
 
 #CcNOTE
 {
@@ -44,6 +59,10 @@ header {
     left:95px;
     top:320px;
     opacity: .5;
+}
+#WLETTER{
+    color:white;
+    left:110px;
 }
 
 #DNOTE
@@ -53,6 +72,10 @@ header {
     top:450px;
     opacity: .5;
 }
+#SLETTER{
+    color:black;
+    left:170px;
+}
 
 #DdNOTE
 {
@@ -60,6 +83,10 @@ header {
     left:205px;
     top:320px;
     opacity: .5;
+}
+#ELETTER{
+    color:white;
+    left:225px;
 }
 
 #ENOTE
@@ -69,6 +96,10 @@ header {
     top:450px;
     opacity: .5;
 }
+#DLETTER{
+    color:black;
+    left:290px;
+}
 
 #FNOTE
 {
@@ -77,55 +108,85 @@ header {
     top:450px;
     opacity: .5;
 }
-/*
+#JLETTER{
+    color:black;
+    left:385px;
+}
+
 #FfNOTE
 {
     color:white;
-    left:400px;
-    top:400px
-    opacity: 1;
+    left:425px;
+    top:320px;
+    opacity: .5;
+}
+#ULETTER{
+    color:white;
+    left:445px;
 }
 
 #GNOTE
 {
+    
     color:black;
-    left:95px;
-    top:450px;
-    opacity: 0;
+    left: 492px;
+    top: 450px;
+    opacity: .5;
+}
+#KLETTER{
+    color:black;
+    left:500px;
 }
 
 #GgNOTE
 {
     color:white;
-    left:50px;
-    top:320px
-    opacity: 0;
+    left: 532px;
+    top: 320px;
+    opacity: .5;
+}
+#ILETTER{
+    color:white;
+    left:560px;
 }
 
 #ANOTE
 {
     color:black;
-    left:95px;
+    left:605px;
     top:450px;
-    opacity: 0;
+    opacity: .5;
+}
+#LLETTER{
+    color:black;
+    left:610px;
 }
 
 #AaNOTE
 {
+    
     color:white;
-    left:50px;
-    top:320px
-    opacity: 0;
+    left: 645px;
+    top: 320px;
+    opacity: .5;
+}
+#OLETTER{
+    color:white;
+    left:665px;
 }
 
 #BNOTE
 {
     color:black;
-    left:95px;
+    left:715px;
     top:450px;
-    opacity: 0;
+    opacity: .5;
 }
-*/
+#SEMILETTER{
+    color:black;
+    left:740px;
+}
+
 
 button{
     width: 200px;
@@ -236,6 +297,12 @@ p{
     z-index: 120;
 }
 
+#textbook1, #textbook2 {
+    width:200px;
+    height: 15px;
+    margin-left: 100px;
+    margin: 24px auto 0px auto;
+}
 
 footer{
     text-align:center;

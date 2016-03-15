@@ -1,10 +1,12 @@
 
+
 var keys = [];
 
 var soundC = "sound/piano_middle_C.mp3";
 
+keyCode();
 
-$(function() {
+$(function(){
     
     console.log('ready');
     
@@ -27,7 +29,8 @@ $(function() {
             createjs.Sound.play(soundC);
         }
     
-
+    
+    
     
     
     

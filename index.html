@@ -7,12 +7,10 @@
         <!--css link-->
         <link type="text/css" href="main.css" rel="stylesheet">
         
-        <!--js link-->
-        <script type="text/javascript" src="main.js"></script>
+        <!--js link
+        <script type="text/javascript" src="main.js"></script>-->
         <!--jQuery first-->
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-        
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         
         <!--custom js-->
         <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
@@ -20,8 +18,6 @@
         
     
     </head>
-    
-        
         
 
     <body>
@@ -29,6 +25,7 @@
         <header id="mySketch">
             <img src="imgs/tempVisualizer.png" width="800" height="250" alt="visualizer" id="img0" />
         </header>
+        
         
         <audio id="C" src="sound/piano_middle_C.mp3"></audio>
         <audio id="Cc" src="sound/piano_C_sharp.mp3"></audio>
@@ -43,12 +40,11 @@
         <audio id="Aa" src="sound/piano_A_sharp.mp3"></audio>
         <audio id="B" src="sound/piano_B.mp3"></audio>
         
-        
         <section class="menu">
             
-            <button><a href="#" id="play">PLAY ►</a></button>
-            <button><a href="#" id="stop">STOP</a></button>
-            <button><a href="#" id="record">RECORD</a></button>
+            <a href="#" id="play"><button>PLAY ►</button></a>
+            <a href="#" id="stop"><button>STOP</button></a>
+            <a href="#" id="record"><button>RECORD</button></a>
         
         </section>
         
@@ -59,65 +55,234 @@
             
             <a href="#">
             <img onclick="document.getElementById('C').play()" src="imgs/CNote.png" height="500" alt="notec" id="img1">
+                <p id="CNOTE">C</p>
+                <p id="ALETTER">A</p>
             </a>
-            <p id="CNOTE">C</p>
+            
                 
             <a href="#">
             <img onclick="document.getElementById('Cc').play()" src="imgs/C_Note.png" height="377" alt="notec#" id="img2" />
+                <p id="CcNOTE">C#</p>
+                <p id="WLETTER">W</p>
             </a>
-            <p id="CcNOTE">C#</p>
+            
             
             <a href="#">
             <img onclick="document.getElementById('D').play()" src="imgs/DNote.png" height="500" alt="noted" id="img3" />
+                <p id="DNOTE">D</p>
+                <p id="SLETTER">S</p>
             </a>
-            <p id="DNOTE">D</p>
+            
             
             <a href="#">
             <img onclick="document.getElementById('Dd').play()" src="imgs/D_Note.png" height="377" alt="noted#" id="img4" />
+                <p id="DdNOTE">D#</p>
+                <p id="ELETTER">E</p>
             </a>
-            <p id="DdNOTE">D#</p>
+            
             
             <a href="#">
             <img onclick="document.getElementById('E').play()" src="imgs/ENote.png" height="500" alt="notee" id="img5" />
+                <p id="ENOTE">E</p>
+                <p id="DLETTER">D</p>
             </a>
-            <p id="ENOTE">E</p>
+            
             
             <a href="#">
             <img onclick="document.getElementById('F').play()" src="imgs/FNote.png" height="500" alt="notef" id="img6" />
+                <p id="FNOTE">F</p>
+                <p id="JLETTER">J</p>
             </a>
-            <!--<p id="FNOTE">F</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('Ff').play()" src="imgs/F_Note.png" height="377" alt="notef#" id="img7" />
+                <p id="FfNOTE">F#</p>
+                <p id="ULETTER">U</p>
             </a>
-            <!--<p id="FfNOTE">F#</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('G').play()" src="imgs/GNote.png" height="500" alt="noteg" id="img8" />
+                <p id="GNOTE">G</p>
+                <p id="KLETTER">K</p>
             </a>
-            <!--<p id="GNOTE">G</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('Gg').play()" src="imgs/G_Note.png" height="377" alt="noteg#" id="img9" />
+                <p id="GgNOTE">G#</p>
+                <p id="ILETTER">I</p>
             </a>
-            <!--<p id="GgNOTE">G#</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('A').play()" src="imgs/ANote.png" height="500" alt="notea" id="img10" />
+                <p id="ANOTE">A</p>
+                <p id="LLETTER">L</p>
             </a>
-            <!--<p id="ANOTE">A</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('Aa').play()" src="imgs/A_Note.png" height="377" alt="notea#" id="img11" />
+                <p id="AaNOTE">A#</p>
+                <p id="OLETTER">O</p>
             </a>
-            <!--<p id="AaNOTE">A#</p>-->
+            
             
             <a href="#">
             <img onclick="document.getElementById('B').play()" src="imgs/BNote.png" height="500" alt="noteb" id="img12" />
+                <p id="BNOTE">B</p>
+                <p id="SEMILETTER">;</p>
             </a>
-            <!--<p id="BNOTE">B</p>-->
+            
             
         </section>
+        
+        
+        <input id="textbox1" onkeydown="keyCode(event)">
+        <script>
+            function keyCode(event) {
+                var x = event.keyCode;
+                if (x == 65) {
+                console.log('You pressed the A key!');
+                    
+                    C.play();
+                    
+                    $('p#CNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 87) {
+                console.log('You pressed the A key!');
+                    
+                    Cc.play();
+                    
+                    $('p#CcNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 83) {
+                console.log('You pressed the A key!');
+                    
+                    D.play();
+                    
+                    $('p#DNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 69) {
+                console.log('You pressed the A key!');
+                    
+                    Dd.play();
+                    
+                    $('p#DdNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                
+                
+                if (x == 68) {
+                console.log('You pressed the A key!');
+                    
+                    E.play();
+                    
+                    $('p#ENOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 74) {
+                console.log('You pressed the A key!');
+                    
+                    F.play();
+                    
+                    $('p#FNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 85) {
+                console.log('You pressed the A key!');
+                    
+                    Ff.play();
+                    
+                    $('p#FfNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 75) {
+                console.log('You pressed the A key!');
+                    
+                    G.play();
+                    
+                    $('p#GNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 73) {
+                console.log('You pressed the A key!');
+                    
+                    Gg.play();
+                    
+                    $('p#GgNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 76) {
+                console.log('You pressed the A key!');
+                    
+                    A.play();
+                    
+                    $('p#ANOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 79) {
+                console.log('You pressed the A key!');
+                    
+                    Aa.play();
+                    
+                    $('p#AaNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+                if (x == 186) {
+                console.log('You pressed the A key!');
+                    
+                    B.play();
+                    
+                    $('p#BNOTE').animate(
+                    {
+                        opacity: 1
+                    }
+                    )}
+            }
+        </script>
+        <input id="textbook2" onclick="keyCode2(event)">
+        <script>
+            function keyCode2(event) {
+                var x = event.keyCode2;
+                if (x == 65) {
+                console.log('You released the A key!');
+                    
+                    $('p#CNOTE').animate(
+                    {
+                        opacity: .5
+                    }
+                )}
+            }
+        </script>
+        
         
         <footer>
             <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
